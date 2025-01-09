@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="shortcut icon" href="./data/favicon.ico" type="image/x-icon">
+        <title>hybridTime</title>
+    </head>
+    <body>
+        <div class="app">
+            <div class="timer-container">
+                <h1 id="title"><span class="italic">hybrid<strong>Time</strong></span></h1>
+                <div id="time-display">00:00</div>
+                <div id="btn-above">
+                    <button id="start-btn" class="btn-above">Start Work</button>
+                    <button id="pause-btn" class="btn-above">Pause</button>
+                    <button id="break-btn" class="btn-above">Take Break</button>
+                </div>
+                <div id="btn-below">
+                    <button id="reset-btn" class="btn-below">Reset</button>
+                    <button id="toggle-resume-btn" class="btn-below">Toggle Resume Mode</button>
+                </div>
+                <div id="mode-indicator">Mode: Manual Resume</div>
+            </div>
+            <audio id="break-end-sound" src="./data/SingingBowl_359_01.wav"></audio>
+        </div>
+        <script src="script.ts"></script>
+    </body>
+</html>
