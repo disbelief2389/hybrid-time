@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dynamicPomodoro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h1 id="title"><span class="italic">dynamicPomodoro</span></h1>
+        <div id="time-display">00:00</div>
+        <div id="btn-above">
+            <button id="start-btn">Start Work</button>
+            <button id="pause-btn">Pause</button>
+            <button id="break-btn">Take Break</button>
+        </div>
+        <div id="btn-below">
+            <button id="reset-btn">Reset</button>
+            <button id="toggle-resume-btn">Toggle Resume Mode</button>
+        </div>
+        <div id="mode-indicator">Mode: Manual Resume</div>
+    </div>
+    <audio id="break-end-sound" src="./data/SingingBowl_359_01.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

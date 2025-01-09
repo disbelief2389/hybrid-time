@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        to top,
+        black,
+        rgb(20, 21, 20)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: linen;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.selectable {
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+
+.timer-container {
+    text-align: center;
+    background: linear-gradient(
+        to top,
+        black,
+        rgba(78, 85, 79, 0.164)
+    );
+    padding: 5%;
+    margin: 20% auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 95%;
+}
+
+#title {
+    margin: 10% auto 0px auto;
+    scale: 0.7;
+}
+
+button {
+    margin: 10px;
+    padding: 17px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(250, 240, 230, 0.771);
+    background-color: #0b140d38;
+    border-radius: 50px;
+    border: 1px solid rgba(250, 240, 230, 0.118);
+    transition: background-color 0.05s ease-in-out;
+}
+
+button:active {
+    background-color: rgba(240, 248, 255, 0.168);
+}
+
+#btn-above {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: 125%;
+    margin: 10% auto;
+}
+
+#btn-below {
+    scale: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10% auto;
+    max-width: 89%;
+}
+
+.btn-above {
+    width: 50%;
+    margin: 5px auto;
+}
+
+.btn-below {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+
+}
+
+#time-display {
+    max-width: fit-content;
+    max-height: fit-content;
+    aspect-ratio: 1 / 1;
+    font-size: 48px;
+    margin: 20% auto 30% auto;
+    padding: 10%;
+    border: 3px solid rgba(250, 240, 230, 0.204);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Previous styles remain the same */
+#toggle-resume-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mode-indicator {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.325);
+}
